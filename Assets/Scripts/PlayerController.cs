@@ -178,7 +178,12 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private int maxBombs = 3;
 
     private int currentBombs;
+    public void RefillBombs()
+    {
+        currentBombs = maxBombs;
 
+        UpdateBombUI();
+    }
 
 
 
